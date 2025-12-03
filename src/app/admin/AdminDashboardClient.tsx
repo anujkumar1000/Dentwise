@@ -4,7 +4,7 @@ import { SettingsIcon } from "lucide-react";
 import { useUser } from "@clerk/nextjs";
 import { useGetDoctors } from "@/hooks/use-doctors";
 import { useGetAppointments } from "@/hooks/use-appointment";
-import Navbar from "@/components/NavBar";
+import Navbar from "@/components/Navbar";
 import AdminStats from "@/components/admin/AdminStats";
 import DoctorsManagement from "@/components/admin/DoctorsManagement";
 
@@ -62,7 +62,7 @@ function AdminDashboardClient() {
           totalAppointments={stats.totalAppointments}
           completedAppointments={stats.completedAppointments}
         />
-          <DoctorsManagement />
+        <DoctorsManagement />
       </div>
     </div>
   );
